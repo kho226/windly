@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wT-Jw-4f5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sleet_large" translatesAutoresizingMaskIntoConstraints="NO" id="eBY-Pz-ZhH">
+                                        <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="AOO-VL-rJG"/>
+                                            <constraint firstAttribute="width" constant="240" id="ksZ-QH-OYW"/>
+                                            <constraint firstAttribute="height" constant="128" id="l9F-fI-eJC"/>
+                                            <constraint firstAttribute="width" secondItem="eBY-Pz-ZhH" secondAttribute="height" multiplier="15:8" id="mB2-7w-Iw6"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="AOO-VL-rJG"/>
+                                                <exclude reference="mB2-7w-Iw6"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="windly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTw-WP-SSR">
+                                        <rect key="frame" x="262" y="188" width="77" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="QTw-WP-SSR" secondAttribute="height" multiplier="43:15" constant="-9" id="pSI-Ya-q9T"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43137254899999999" green="0.50980392159999999" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eBY-Pz-ZhH" firstAttribute="top" secondItem="QTw-WP-SSR" secondAttribute="bottom" constant="18" id="NrE-vY-nlP"/>
+                                    <constraint firstItem="eBY-Pz-ZhH" firstAttribute="centerX" secondItem="0wT-Jw-4f5" secondAttribute="centerX" id="Wt5-b7-YqD"/>
+                                    <constraint firstItem="QTw-WP-SSR" firstAttribute="centerX" secondItem="0wT-Jw-4f5" secondAttribute="centerX" id="f4l-HX-NAM"/>
+                                    <constraint firstItem="eBY-Pz-ZhH" firstAttribute="centerY" secondItem="0wT-Jw-4f5" secondAttribute="centerY" id="iKb-f8-AxW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0wT-Jw-4f5" secondAttribute="trailing" id="Lqk-x4-0hi"/>
+                            <constraint firstItem="0wT-Jw-4f5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="t6Q-gR-Krn"/>
+                            <constraint firstItem="0wT-Jw-4f5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="vPn-X7-GGX"/>
+                            <constraint firstItem="0wT-Jw-4f5" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="wSi-ew-AnX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sleet_large" width="96" height="96"/>
+    </resources>
+</document>
